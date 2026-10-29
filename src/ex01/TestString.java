@@ -14,6 +14,19 @@ public class TestString {
 		System.out.print("name1, name3 / ");
 		compare(name1,name3);
 		
+		String name5 = "이순신";
+		String name6 = "이이";
+		
+		if (name5.compareTo(name6) > 0 ) {
+			System.out.println("이순신이 크다");
+		} else {
+			if (name5.compareTo(name6) == 0) {
+				System.out.println("이순신 == 이이");
+			} else {
+				System.out.println("이이가 크다");
+			}
+		}
+		
 	}
 	public static void compare(String str1, String str2) {
 		System.out.print("str1==str2 : ");
